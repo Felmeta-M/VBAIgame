@@ -61,6 +61,11 @@ venture-builder-ai/
    python texture_generator.py
    ```
 
+2. upgrade openai
+```bash
+   pip install --upgrade openai
+   ```
+
 2. Run the main application:
    ```bash
    python app.py
