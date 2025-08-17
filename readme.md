@@ -40,6 +40,38 @@ A 3D adventure game with integrated OpenAI Realtime API for natural speech-to-sp
    OPENAI_API_KEY=your_api_key_here
    ```
 
+## Usage
+
+1. Generate textures (if not already present):
+   ```bash
+   python texture_generator.py
+   ```
+
+2. upgrade openai
+```bash
+   pip install --upgrade openai
+   ```
+
+3. Run the main application:
+   ```bash
+   python app.py
+   ```
+
+### Audio System Test
+```bash
+python3 test_audio.py
+```
+Tests microphone, speakers, and basic audio functionality.
+
+### Speech System Demo
+```bash
+python3 demo_speech.py
+```
+### Run the main application:
+   ```bash
+   python app.py
+   ```
+
 ## Project Structure
 
 ```plaintext
@@ -53,23 +85,6 @@ venture-builder-ai/
 ├── .env               # Environment variables (not in repo)
 └── README.md          # Project documentation
 ```
-
-## Usage
-
-1. Generate textures (if not already present):
-   ```bash
-   python texture_generator.py
-   ```
-
-2. upgrade openai
-```bash
-   pip install --upgrade openai
-   ```
-
-2. Run the main application:
-   ```bash
-   python app.py
-   ```
 
    ### Controls
 
@@ -123,6 +138,19 @@ If you experience audio issues:
    - **No microphone**: Check microphone permissions and device selection
    - **Audio lag**: Check internet connection (OpenAI API dependency)
 
+
+## Testing 
+
+### Audio System Test
+```bash
+python3 test_audio.py
+```
+Tests microphone, speakers, and basic audio functionality.
+
+### Speech System Demo
+```bash
+python3 demo_speech.py
+```
 
 ## Contributing
 
