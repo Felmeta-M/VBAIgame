@@ -346,31 +346,31 @@ class DialogueSystem:
         
         # Check Realtime API connection
         if self.realtime_conn:
-            print("✅ Realtime API: Connected")
+            print("Realtime API: Connected")
         else:
-            print("❌ Realtime API: Not connected")
+            print("Realtime API: Not connected")
         
         # Check audio devices
         try:
             devices = sd.query_devices()
             input_device = sd.query_devices(kind='input')
             output_device = sd.query_devices(kind='output')
-            print(f"✅ Input device: {input_device['name']}")
-            print(f"✅ Output device: {output_device['name']}")
+            print(f"Input device: {input_device['name']}")
+            print(f"Output device: {output_device['name']}")
         except Exception as e:
-            print(f"❌ Audio devices: Error - {e}")
+            print(f"Audio devices: Error - {e}")
         
         # Check audio player
         if self.audio_player:
-            print("✅ Audio player: Initialized")
+            print("Audio player: Initialized")
         else:
-            print("❌ Audio player: Not initialized")
+            print("Audio player: Not initialized")
         
         # Check recording status
         if self.is_recording:
-            print("🎤 Recording: Active")
+            print("Recording: Active")
         else:
-            print("🎤 Recording: Inactive")
+            print("Recording: Inactive")
         
         print("========================\n")
 
@@ -480,7 +480,7 @@ class DialogueSystem:
                 
             # Audio recording indicator
             if self.is_recording:
-                recording_text = "🎤 Recording... Press F5 to stop"
+                recording_text = "Recording... Press F5 to stop"
                 recording_surface = self.font.render(recording_text, True, (255, 0, 0))  # Red text
                 self.ui_surface.blit(recording_surface, (40, box_y + box_height - 70))
 
