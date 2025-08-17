@@ -54,12 +54,6 @@ venture-builder-ai/
 └── README.md          # Project documentation
 ```
 
-## Features
-
-- 3D environment rendering using PyGame and OpenGL
-- Procedurally generated textures
-- AI-powered interactions using OpenAI API
-
 ## Usage
 
 1. Generate textures (if not already present):
