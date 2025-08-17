@@ -20,7 +20,7 @@ A 3D adventure game with integrated OpenAI Realtime API for natural speech-to-sp
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/amplitudeventures/VBAIgame.git
+   git clone https://github.com/Felmeta-M/VBAIgame.git
    cd VBAIgame
    ```
 
